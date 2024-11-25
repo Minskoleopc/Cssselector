@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Select by Tag Name -->
+
+    <input type="text" />
+
+    <!-- 2. Select by ID -->
+    <input id="username" type="text" />
+
+    <!-- 3. Select by Class -->
+    <input class="form-input" type="text" />
+
+    <!-- 4. Select by Attribute -->
+    <input type="password" />
+
+    <!-- 5. Select by Multiple Attributes -->
+    <input type="text" name="email" />
+
+    <!-- 6. Partial Match on Attribute Values -->
+    <input type="email" />
+    <!-- Starts With (^=) -->
+    <!-- Matches elements where type starts with em. -->
+
+    <!-- Ends With ($=) -->
+    <!-- Matches elements where type ends with address. -->
+    <input type="email-address" />
+
+    <!-- Contains (*=)
+    <input type="email-address" /> -->
+    <input type="user-email" />
+
+    <!-- 7. Direct Child Selector (>): -->
+    <div>
+        <span>First</span>
+        <div>
+            <span>Nested</span>
+        </div>
+    </div>
+    <!-- Matches <span> that is a direct child of a <div>. -->
+    <!-- 8. Descendant Selector (Space): -->
+    <div>
+        <span>First</span>
+        <div>
+            <span>Nested</span>
+        </div>
+    </div>
+    <!-- Matches all <span> elements inside <div>, no matter how deeply nested. -->
+    <!-- 9. Adjacent Sibling Selector (+): -->
+    <!-- 
+    <input id="first" />
+    <input id="second" /> -->
+
+    <!-- 10. General Sibling Selector (~): -->
+    <div id="start"></div>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <!-- Matches all <p> elements that are siblings of #start. -->
+    <!-- 11. nth-child and nth-of-type -->
+    <!-- nth-child -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!-- Matches the second <li> in the list. -->
+    <!-- nth-of-type -->
+    <div>
+        <p>First paragraph</p>
+        <span>Not a paragraph</span>
+        <p>Second paragraph</p>
+    </div>
+    <!-- Matches the second <p> element of its type. -->
+    <!-- 12. Negation Selector (:not) -->
+    <input type="text" class="exclude" />
+    <input type="text" />
+    <!-- Matches <input> elements that do not have class="exclude". -->
+    <!-- 13. Combine Selectors -->
+    <div class="container">
+        <input id="email" type="text" class="form-input" />
+    </div>
+    <!-- Matches <input> with id="email", class="form-input", inside .container. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
